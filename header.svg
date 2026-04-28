@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="260" viewBox="0 0 1280 260">
+  <defs>
+    <linearGradient id="shootingGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.85"/>
+    </linearGradient>
+    <radialGradient id="bgGrad" cx="22%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#0d1626"/>
+      <stop offset="100%" stop-color="#080b14"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="260" fill="url(#bgGrad)"/>
+
+  <!-- Stars group 1 — 40s drift left-down -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0; -18,9; 0,0" dur="40s" repeatCount="indefinite" calcMode="linear"/>
+    <circle cx="92"  cy="36"  r="1"   fill="#fff" opacity="0.58"/>
+    <circle cx="318" cy="68"  r="0.8" fill="#fff" opacity="0.40"/>
+    <circle cx="558" cy="20"  r="1.1" fill="#fff" opacity="0.65"/>
+    <circle cx="740" cy="54"  r="0.9" fill="#fff" opacity="0.48"/>
+    <circle cx="920" cy="16"  r="1"   fill="#fff" opacity="0.58"/>
+    <circle cx="1080" cy="60" r="0.8" fill="#fff" opacity="0.40"/>
+    <circle cx="176" cy="228" r="0.9" fill="#fff" opacity="0.36"/>
+    <circle cx="638" cy="218" r="1"   fill="#fff" opacity="0.45"/>
+    <circle cx="860" cy="242" r="0.8" fill="#fff" opacity="0.28"/>
+    <circle cx="438" cy="245" r="0.9" fill="#fff" opacity="0.30"/>
+    <circle cx="60"  cy="252" r="0.7" fill="#fff" opacity="0.26"/>
+  </g>
+
+  <!-- Stars group 2 — 55s drift right-up -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0; 14,-7; 0,0" dur="55s" repeatCount="indefinite" calcMode="linear"/>
+    <circle cx="218" cy="104" r="0.9" fill="#fff" opacity="0.48"/>
+    <circle cx="418" cy="42"  r="0.7" fill="#fff" opacity="0.65"/>
+    <circle cx="618" cy="122" r="1.1" fill="#fff" opacity="0.40"/>
+    <circle cx="798" cy="85"  r="0.8" fill="#fff" opacity="0.55"/>
+    <circle cx="998" cy="112" r="1"   fill="#fff" opacity="0.48"/>
+    <circle cx="280" cy="208" r="0.8" fill="#fff" opacity="0.28"/>
+    <circle cx="718" cy="232" r="0.9" fill="#fff" opacity="0.36"/>
+    <circle cx="498" cy="148" r="0.6" fill="#fff" opacity="0.45"/>
+    <circle cx="138" cy="158" r="0.7" fill="#fff" opacity="0.45"/>
+  </g>
+
+  <!-- Stars group 3 — 70s very slow drift -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0; -9,15; 0,0" dur="70s" repeatCount="indefinite" calcMode="linear"/>
+    <circle cx="75"  cy="75"  r="0.7" fill="#fff" opacity="0.36"/>
+    <circle cx="378" cy="148" r="0.9" fill="#fff" opacity="0.45"/>
+    <circle cx="678" cy="38"  r="0.6" fill="#fff" opacity="0.36"/>
+    <circle cx="838" cy="182" r="1"   fill="#fff" opacity="0.28"/>
+    <circle cx="258" cy="58"  r="0.8" fill="#fff" opacity="0.36"/>
+    <circle cx="978" cy="44"  r="0.6" fill="#fff" opacity="0.45"/>
+    <circle cx="560" cy="240" r="0.7" fill="#fff" opacity="0.28"/>
+  </g>
+
+  <!-- Shooting star — 30s cycle, visible for ~1.4s at t=8s -->
+  <line x1="-72" y1="0" x2="0" y2="0"
+        stroke="url(#shootingGrad)" stroke-width="1.4" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="translate"
+      values="-60,50; -60,50; 720,210; 720,210"
+      keyTimes="0; 0.267; 0.313; 1"
+      dur="30s" repeatCount="indefinite" calcMode="linear"/>
+    <animate attributeName="opacity"
+      values="0; 0; 0.9; 0.9; 0; 0"
+      keyTimes="0; 0.263; 0.278; 0.308; 0.317; 1"
+      dur="30s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Name -->
+  <text x="80" y="118"
+    font-family="Georgia, 'Times New Roman', Times, serif"
+    font-size="54" font-weight="400"
+    fill="#f2ede4" letter-spacing="1.5">Joey Spagnoli</text>
+
+  <!-- NASA-red accent rule — spans full name width -->
+  <line x1="80" y1="132" x2="440" y2="132" stroke="#E03C21" stroke-width="1.2"/>
+
+  <!-- Tagline -->
+  <text x="80" y="150"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="11" font-weight="400"
+    fill="#6e6a66" letter-spacing="5.5">AI ENGINEER · AGENTS · ML RESEARCH</text>
+
+  <!-- Affiliation -->
+  <text x="80" y="166"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="10" font-weight="400"
+    fill="#3d3b39" letter-spacing="3.8">UNIVERSITY OF FLORIDA · NVIDIA</text>
+
+  <!-- ================================================================ -->
+  <!-- SLS-INSPIRED ROCKET — technical illustration style               -->
+  <!-- Cream structure (#e8e4dc), NASA red nozzles/flame (#E03C21)      -->
+  <!-- Positioned: center x=1198, top y=8                               -->
+  <!-- ================================================================ -->
+  <!-- Scale 0.95 around rocket center (1198,130), then shift left 20px -->
+  <g stroke-linecap="round" stroke-linejoin="round"
+     transform="translate(-20,0) translate(1198,130) scale(0.95) translate(-1198,-130)">
+
+    <!-- LAUNCH ESCAPE SYSTEM tower -->
+    <line x1="1198" y1="8" x2="1198" y2="20"
+          stroke="#e8e4dc" stroke-width="1.1"/>
+    <!-- LES motor housing -->
+    <path d="M1195,20 L1194,30 L1202,30 L1201,20 Z"
+          stroke="#e8e4dc" stroke-width="0.85" fill="#0b1422"/>
+
+    <!-- ORION CAPSULE (ogive cone) -->
+    <path d="M1198,8 C1194,16 1188,28 1185,42 L1211,42 C1208,28 1202,16 1198,8 Z"
+          stroke="#e8e4dc" stroke-width="1.1" fill="#0b1422"/>
+    <!-- Capsule window detail -->
+    <ellipse cx="1198" cy="30" rx="3.5" ry="2.8"
+             stroke="#e8e4dc" stroke-width="0.7" fill="none" opacity="0.6"/>
+
+    <!-- SERVICE MODULE -->
+    <rect x="1185" y="42" width="26" height="11" rx="1"
+          stroke="#e8e4dc" stroke-width="0.9" fill="#0b1422"/>
+    <!-- Solar panel stubs -->
+    <line x1="1180" y1="46" x2="1185" y2="46" stroke="#e8e4dc" stroke-width="0.65" opacity="0.50"/>
+    <line x1="1211" y1="46" x2="1216" y2="46" stroke="#e8e4dc" stroke-width="0.65" opacity="0.50"/>
+
+    <!-- ADAPTER / LAS section (taper from SM to core) -->
+    <path d="M1185,53 L1183,62 L1213,62 L1211,53 Z"
+          stroke="#e8e4dc" stroke-width="0.85" fill="#0b1422"/>
+
+    <!-- CORE STAGE — the dominant element, towers above SRBs -->
+    <rect x="1183" y="62" width="30" height="126" rx="1"
+          stroke="#e8e4dc" stroke-width="1.3" fill="#0b1422"/>
+    <!-- Intertank segment bands (subtle structural detail) -->
+    <line x1="1183" y1="100" x2="1213" y2="100" stroke="#e8e4dc" stroke-width="0.45" opacity="0.38"/>
+    <line x1="1183" y1="142" x2="1213" y2="142" stroke="#e8e4dc" stroke-width="0.45" opacity="0.38"/>
+
+    <!-- ENGINE SECTION (flared base of core) -->
+    <path d="M1183,188 L1176,200 L1220,200 L1213,188 Z"
+          stroke="#e8e4dc" stroke-width="1.1" fill="#0b1422"/>
+
+    <!-- RS-25 ENGINE NOZZLES — three bell shapes -->
+    <!-- Left nozzle -->
+    <path d="M1180,200 C1178,210 1179,220 1183,224 C1187,220 1188,210 1186,200 Z"
+          stroke="#E03C21" stroke-width="0.95" fill="#120807"/>
+    <!-- Center nozzle (slightly larger) -->
+    <path d="M1193,200 C1190,212 1191,224 1198,228 C1205,224 1206,212 1203,200 Z"
+          stroke="#E03C21" stroke-width="0.95" fill="#120807"/>
+    <!-- Right nozzle -->
+    <path d="M1210,200 C1208,210 1209,220 1213,224 C1217,220 1218,210 1216,200 Z"
+          stroke="#E03C21" stroke-width="0.95" fill="#120807"/>
+
+    <!-- ======================================================= -->
+    <!-- LEFT SOLID ROCKET BOOSTER                               -->
+    <!-- center x=1160, span x=1153–1167, nose tip y=90         -->
+    <!-- ======================================================= -->
+    <!-- LRB nose cone (ogive) -->
+    <path d="M1160,90 C1156,100 1153,112 1153,124 L1167,124 C1167,112 1164,100 1160,90 Z"
+          stroke="#e8e4dc" stroke-width="1" fill="#0b1422"/>
+    <!-- LRB body -->
+    <rect x="1153" y="124" width="14" height="68" rx="0.5"
+          stroke="#e8e4dc" stroke-width="1.05" fill="#0b1422"/>
+    <!-- LRB segment bands -->
+    <line x1="1153" y1="146" x2="1167" y2="146" stroke="#e8e4dc" stroke-width="0.4" opacity="0.36"/>
+    <line x1="1153" y1="166" x2="1167" y2="166" stroke="#e8e4dc" stroke-width="0.4" opacity="0.36"/>
+    <line x1="1153" y1="182" x2="1167" y2="182" stroke="#e8e4dc" stroke-width="0.4" opacity="0.36"/>
+    <!-- LRB nozzle housing -->
+    <path d="M1153,192 L1150,202 L1170,202 L1167,192 Z"
+          stroke="#e8e4dc" stroke-width="0.85" fill="#0b1422"/>
+    <!-- LRB nozzle bell -->
+    <path d="M1151,202 C1149,212 1151,222 1160,226 C1169,222 1171,212 1169,202 Z"
+          stroke="#E03C21" stroke-width="0.95" fill="#120807"/>
+
+    <!-- ======================================================= -->
+    <!-- RIGHT SOLID ROCKET BOOSTER (mirror)                     -->
+    <!-- center x=1236, span x=1229–1243                        -->
+    <!-- ======================================================= -->
+    <!-- RRB nose cone -->
+    <path d="M1236,90 C1240,100 1243,112 1243,124 L1229,124 C1229,112 1232,100 1236,90 Z"
+          stroke="#e8e4dc" stroke-width="1" fill="#0b1422"/>
+    <!-- RRB body -->
+    <rect x="1229" y="124" width="14" height="68" rx="0.5"
+          stroke="#e8e4dc" stroke-width="1.05" fill="#0b1422"/>
+    <!-- RRB segment bands -->
+    <line x1="1229" y1="146" x2="1243" y2="146" stroke="#e8e4dc" stroke-width="0.4" opacity="0.36"/>
+    <line x1="1229" y1="166" x2="1243" y2="166" stroke="#e8e4dc" stroke-width="0.4" opacity="0.36"/>
+    <line x1="1229" y1="182" x2="1243" y2="182" stroke="#e8e4dc" stroke-width="0.4" opacity="0.36"/>
+    <!-- RRB nozzle housing -->
+    <path d="M1229,192 L1226,202 L1246,202 L1243,192 Z"
+          stroke="#e8e4dc" stroke-width="0.85" fill="#0b1422"/>
+    <!-- RRB nozzle bell -->
+    <path d="M1227,202 C1225,212 1227,222 1236,226 C1245,222 1247,212 1245,202 Z"
+          stroke="#E03C21" stroke-width="0.95" fill="#120807"/>
+
+    <!-- ATTACHMENT STRUTS (SRB to core) -->
+    <!-- Upper forward -->
+    <line x1="1167" y1="130" x2="1183" y2="126" stroke="#e8e4dc" stroke-width="0.65" opacity="0.52"/>
+    <line x1="1229" y1="130" x2="1213" y2="126" stroke="#e8e4dc" stroke-width="0.65" opacity="0.52"/>
+    <!-- Lower aft -->
+    <line x1="1167" y1="174" x2="1183" y2="174" stroke="#e8e4dc" stroke-width="0.65" opacity="0.52"/>
+    <line x1="1229" y1="174" x2="1213" y2="174" stroke="#e8e4dc" stroke-width="0.65" opacity="0.52"/>
+
+    <!-- ======================================================= -->
+    <!-- ENGINE PLUMES — animated flame                          -->
+    <!-- ======================================================= -->
+
+    <!-- Main RS-25 plume (three engines combined) -->
+    <path d="M1178,224 C1175,234 1178,248 1198,260 C1218,248 1221,234 1218,224 C1210,230 1204,238 1198,234 C1192,238 1186,230 1178,224 Z"
+          fill="#E03C21" fill-opacity="0.60" stroke="none">
+      <animate attributeName="d"
+        values="M1178,224 C1175,234 1178,248 1198,260 C1218,248 1221,234 1218,224 C1210,230 1204,238 1198,234 C1192,238 1186,230 1178,224 Z;
+                M1178,224 C1173,236 1176,252 1198,266 C1220,252 1223,236 1218,224 C1209,232 1202,241 1198,236 C1194,241 1187,232 1178,224 Z;
+                M1178,224 C1176,232 1180,244 1198,256 C1216,244 1220,232 1218,224 C1211,228 1205,235 1198,232 C1191,235 1185,228 1178,224 Z"
+        dur="0.7s" repeatCount="indefinite" calcMode="linear"/>
+      <animate attributeName="fill-opacity"
+        values="0.60;0.75;0.48;0.66;0.60"
+        dur="0.7s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Left SRB plume -->
+    <path d="M1151,226 C1148,236 1152,248 1160,254 C1168,248 1171,236 1169,226 Z"
+          fill="#E03C21" fill-opacity="0.52" stroke="none">
+      <animate attributeName="d"
+        values="M1151,226 C1148,236 1152,248 1160,254 C1168,248 1171,236 1169,226 Z;
+                M1151,226 C1147,238 1151,252 1160,259 C1169,252 1173,238 1169,226 Z;
+                M1151,226 C1149,234 1153,245 1160,251 C1167,245 1171,234 1169,226 Z"
+        dur="0.7s" repeatCount="indefinite" calcMode="linear"/>
+      <animate attributeName="fill-opacity"
+        values="0.52;0.70;0.38;0.56;0.52"
+        dur="0.7s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Right SRB plume -->
+    <path d="M1227,226 C1224,236 1228,248 1236,254 C1244,248 1247,236 1245,226 Z"
+          fill="#E03C21" fill-opacity="0.52" stroke="none">
+      <animate attributeName="d"
+        values="M1227,226 C1224,236 1228,248 1236,254 C1244,248 1247,236 1245,226 Z;
+                M1227,226 C1223,238 1227,252 1236,259 C1245,252 1249,238 1245,226 Z;
+                M1227,226 C1225,234 1229,245 1236,251 C1243,245 1247,234 1245,226 Z"
+        dur="0.7s" repeatCount="indefinite" calcMode="linear"/>
+      <animate attributeName="fill-opacity"
+        values="0.52;0.68;0.38;0.56;0.52"
+        dur="0.7s" repeatCount="indefinite"/>
+    </path>
+
+  </g>
+</svg>
