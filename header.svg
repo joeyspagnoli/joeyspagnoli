@@ -71,22 +71,22 @@
   </line>
 
   <!-- Name -->
-  <text x="80" y="118"
+  <text x="80" y="142"
     font-family="Georgia, 'Times New Roman', Times, serif"
-    font-size="54" font-weight="400"
+    font-size="90" font-weight="400"
     fill="#f2ede4" letter-spacing="1.5">Joey Spagnoli</text>
 
   <!-- NASA-red accent rule — spans full name width -->
-  <line x1="80" y1="132" x2="440" y2="132" stroke="#E03C21" stroke-width="1.2"/>
+  <line x1="80" y1="158" x2="710" y2="158" stroke="#E03C21" stroke-width="1.2"/>
 
   <!-- Tagline -->
-  <text x="80" y="150"
+  <text x="80" y="176"
     font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
     font-size="11" font-weight="400"
     fill="#6e6a66" letter-spacing="5.5">AI ENGINEER · AGENTS · ML RESEARCH</text>
 
   <!-- Affiliation -->
-  <text x="80" y="166"
+  <text x="80" y="192"
     font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
     font-size="10" font-weight="400"
     fill="#3d3b39" letter-spacing="3.8">UNIVERSITY OF FLORIDA · NVIDIA</text>
