@@ -40,7 +40,7 @@ End-to-end audio ML pipeline built for UF AI Scholars — published in the UF Jo
 
 <br>
 
-**polymarket-inbox** &nbsp; `private · agentic build`
+**young-marketers-inbox** &nbsp; `private · agentic build`
 
 Real-time iMessage inbox for influencer campaign management, built entirely with AI agents as a proof of what you can ship with agentic development. BlueBubbles turns macOS Messages into a REST API; Socket.IO events flow through Next.js via SSE; SQLite owns campaign metadata.
 
