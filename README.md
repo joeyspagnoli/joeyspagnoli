@@ -65,7 +65,7 @@ AI Scholars researcher at the M.E. Rinker Sr. School of Construction Management,
 <br>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/api?username=joeyspagnoli&bg_color=080b14&color=f2ede4&line=E03C21&point=E03C21&area=true&area_color=E03C21&hide_border=true&radius=4" alt="Contribution graph" width="100%"/>
+  <img src="https://streak-stats.demolab.com/?user=joeyspagnoli&background=080b14&border=1a1f2e&stroke=1a1f2e&ring=E03C21&fire=E03C21&currStreakLabel=f2ede4&sideLabel=6e6a66&currStreakNum=f2ede4&sideNums=f2ede4&dates=4a4845&hide_border=true" alt="GitHub streak stats" height="165"/>
 </div>
 
 <br>
